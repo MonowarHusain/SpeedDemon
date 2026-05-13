@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 200px; font-family: sans-serif; background: #181818; color: white; padding: 15px; }
+    h3 { margin-top: 0; color: #ff0000; text-align: center; }
+    .slider { width: 100%; cursor: pointer; accent-color: #ff0000; }
+    .display { font-size: 24px; text-align: center; margin: 10px 0; font-weight: bold; }
+    .btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    button { cursor: pointer; background: #333; border: none; color: white; padding: 8px; border-radius: 4px; }
+    button:hover { background: #444; }
+  </style>
+</head>
+<body>
+  <h3>Speed Demon</h3>
+  <div class="display" id="val">1.0x</div>
+  <input type="range" min="0.1" max="5" step="0.1" value="1" class="slider" id="speedRange">
+  <div class="btn-grid">
+    <button onclick="setSpeed(2)">2.0x</button>
+    <button onclick="setSpeed(3)">3.0x</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

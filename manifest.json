@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Speed Demon",
+  "version": "1.0",
+  "description": "Set custom YouTube playback speeds.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
